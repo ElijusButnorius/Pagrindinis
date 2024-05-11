@@ -1,10 +1,11 @@
-def data():
-    print("Hello World")
+class Automobilis:
+    def __init__(self, marke, metai, kuras):
+        self.marke = marke
+        self.metai = metai
+        self.kuras = kuras
 
-data()
+    def __str__(self):
+        return f'Automobilio marke: {self.marke} pagaminimo metai: {self.metai} varomas: {self.kuras}'
 
-def calculate_square(number):
-    return number ** 2
-
-result = calculate_square(4)
-print(result)
+auto = Automobilis('Audi RS6', 2021, 'benzinas')
+print(auto)
